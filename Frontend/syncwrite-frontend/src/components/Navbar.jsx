@@ -1,6 +1,8 @@
+import { useTheme } from "../contexts/ThemeContext";
 import ThemeToggle from "./ThemeToggle";
 
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar() {
+  const { darkMode, setDarkMode } = useTheme();
   return (
     <nav
       className={`sticky top-0 z-50 border-b border-gray-200 ${
