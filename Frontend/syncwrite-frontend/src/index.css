@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 html,
 body {
     height: 100%;
@@ -21,6 +22,7 @@ body {
 
 button:hover {
     scale: 0.95;
+    cursor: pointer;
 }
 
 .dark {
