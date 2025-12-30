@@ -1,13 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+html,
+body {
+    height: 100%;
 }
 
-body,
-html {
-    height: 100%;
-    width: 100%;
-    background-color: #111;
-    color: white;
+body {
+    font-family: Inter, system-ui, sans-serif;
+}
+
+
+body {
+    @apply bg-white text-black transition-colors duration-300;
+}
+
+:root {
+    --light_text: #2474F5;
+    --dark_text: #FDC700;
+}
+
+button:hover {
+    scale: 0.95;
+}
+
+.dark {
+    background-color: var(--dark_text);
+    color: #e5e5e5;
+}
+
+.btn-blue-light {
+    background-color: #2474F5;
+    color: #e5e5e5;
+}
+
+.light {
+    background-color: var(--light_text);
+    color: #000000
+}
+
+.btn-yellow-dark {
+    background-color: #FFDF20;
+    color: #000000;
+}
+
+/* Prevent footer overlap */
+body {
+    padding-bottom: 56px;
 }
